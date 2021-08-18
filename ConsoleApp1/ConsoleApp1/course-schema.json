@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "JSON Schema for grades data relating to all courses taken by a student",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "Courses_List": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [ "Course_Code" ],
+                "properties": {
+                    "Course_Code": {
+                        "type": "string",
+                        "description": "A course code",
+                        "pattern": "^[A-Z][A-Z][A-Z][A-Z][-][0-9][0-9][0-9][0-9]$"
+                    },
+                    "Evaluation_List": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [ "Description", "Course_Weight", "Out_Of" ],
+                            "properties": {
+                                "Description": {
+                                    "type": "string",
+                                    "description": "A description of the evaluation"
+                                },
+                                "Course_Weight": {
+                                    "type": "number",
+                                    "description": "The % of the course mark attributed to the evaluation",
+                                    "minimum": 0,
+                                    "maximum": 100
+                                },
+                                "Out_Of": {
+                                    "type": "integer",
+                                    "description": "The number of marks that represents a perfect score on the evaluation",
+                                    "minimum": 0
+                                },
+                                "Earned_Marks": {
+                                    "anyOf": [
+                                        {
+                                            "type": "number",
+                                            "description": "The student’s score on the evaluation",
+                                            "minimum": 0
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

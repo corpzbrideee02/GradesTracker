@@ -1,0 +1,42 @@
+{
+    "Courses_List": [
+        {
+            "Evaluation_List": [
+                {
+                    "Description": "proj",
+                    "Course_Weight": 15.0,
+                    "Out_Of": 50,
+                    "Earned_Marks": 46.5
+                },
+                {
+                    "Description": "quiz1",
+                    "Course_Weight": 2.0,
+                    "Out_Of": 5,
+                    "Earned_Marks": 4.0
+                },
+                {
+                    "Description": "midterm",
+                    "Course_Weight": 25.0,
+                    "Out_Of": 45,
+                    "Earned_Marks": 29.0
+                }
+            ],
+            "Course_Code": "INFO-3422"
+        },
+        {
+            "Evaluation_List": [
+                {
+                    "Description": "Lab1",
+                    "Course_Weight": 90.0,
+                    "Out_Of": 90,
+                    "Earned_Marks": 90.0
+                }
+            ],
+            "Course_Code": "INFO-3423"
+        },
+        {
+            "Evaluation_List": [],
+            "Course_Code": "INFO-2121"
+        }
+    ]
+}
