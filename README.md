@@ -7,4 +7,5 @@
 * Add evaluations to a course as well as edit and delete evaluations
 * Display a summary listing of the grades information for all courses in the data set
 * Display a detailed listing of the grades information for all evaluations in a selected course
-* Validate any new data generated against the schema created in part 1. At the end of each session, the program should save the data to the JSON data file from step 1.
+* Validate any new data generated against the schema created in part 1. 
+* At the end of each session, the program should save the data to the JSON data file from step 1.
